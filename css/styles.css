@@ -476,3 +476,40 @@ a {
         grid-template-columns: repeat(3 , 1fr);
     }
 }
+
+/* Testimonials */
+
+.testimonial{
+    padding: 3rem;
+}
+
+.testimonial__image{
+    position: relative;
+}
+
+.testimonial__image > img{
+    width: 100%;
+}
+
+.testimonial__image > .icon-container{
+    position: absolute;
+    top: 3rem;
+    right: -12px;
+}
+
+ .testimonial__image,
+ .testimonial__image > .icon-container--accent
+ .testimonial__image > .icon--small{
+    padding-right: 2rem;
+ }
+
+@media screen and (min-width: 768px){
+    .testimonial .quote,
+    .testimonial .quote__author{
+        font-size: 2.4rem;
+    }
+
+    .testimonial .quote{
+        margin-left: 6rem;
+    }
+}
