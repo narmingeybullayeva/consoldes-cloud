@@ -635,3 +635,32 @@ a {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+/* Navigation Bar */
+
+.nav{
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.nav__list{
+    width: 100%;
+}
+
+.nav__item{
+    padding: 0.5rem 2rem;
+    color: #d2d0db;
+    border-bottom: 1px solid #222;
+}
+
+.nav__item>a {
+    color: #d2d0db;
+    transition: color 0.3s;
+}
+
+.nav__item>a:hover {
+    color: #fff;
+}
