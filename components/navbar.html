@@ -1,14 +1,16 @@
-<nav class="nav">
-  <a href="/"><img src="images/logo.png" alt="" /></a>
+<nav class="nav collapsible">
+  <a href="/"><img class="nav__brand" src="images/logo.png" alt="" /></a>
 
-  <svg class="icon icon--white">
+  <svg class="icon icon--white nav__toggler">
     <use xlink:href="images/sprite.svg#menu"></use>
   </svg>
 
-  <ul class="list nav__list">
+  <ul class="list nav__list collapsible__content">
     <li class="nav__item"><a href="#">Hosting</a></li>
     <li class="nav__item"><a href="#">VPS</a></li>
     <li class="nav__item"><a href="#">Domain</a></li>
     <li class="nav__item"><a href="#">Pricing</a></li>
   </ul>
 </nav>
+
+<script src="js/main.js"></script>
