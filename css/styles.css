@@ -339,6 +339,10 @@ a {
     background: #02cdf1;
 }
 
+.card--primary .badge--primary{
+    background-color: #0854b8;
+}
+
 /* Plans */
 
 .plan__name{
@@ -768,4 +772,11 @@ a {
     .block-domain__prices{
         grid-template-columns: repeat(auto-fit,minmax(10rem, 1fr));
     }
+}
+
+/* Plans Block */
+
+.block-plans .grid{
+    gap: 4rem;
+
 }
