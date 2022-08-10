@@ -15,6 +15,11 @@
 
 /* Typography */
 
+::selection{
+    background: var(--color-primary);
+    color: #fff;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -44,6 +49,7 @@ h2{
 
 h3{
     font-size: 3rem;
+    font-weight: 500;
     
 }
 
@@ -138,7 +144,7 @@ a {
 .list{
     list-style: none;
     padding-left: 0;
-    color: var(--color-headings);
+    
 }
 
 .list--inline .list__item{
@@ -149,6 +155,7 @@ a {
 .list--tick{
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
+    color: var(--color-headings);
 }
 
 .list--tick .list__item{
@@ -428,6 +435,7 @@ a {
 
 .media {
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__title{
@@ -804,8 +812,8 @@ a {
 /* Features */
 
 .feature{
-    gap:3rem 2rem;
-    margin: 12rem 0;
+    gap:4rem 2rem;
+    margin: 10rem 0;
 }
 
 .feature:first-of-type{
@@ -826,4 +834,25 @@ a {
     }
 }
 
+/* Showcase Block */
+
+.block-showcase__image > img{
+    width: 100%;
+}
+
+@media screen and (min-width:768px){
+    .block-sowcase .gird{
+        grid-template-columns: 50% 50%;
+    }
+
+    .block-showcase__image{
+        
+        width: auto;
+    }
+
+    .block-showcase__image > img{
+        justify-self: end;
+        max-width: 700px;
+    }
+}
 
