@@ -729,6 +729,7 @@ a {
     width: 60px ;
     height: 60px;
     margin-top: 1rem;
+    margin-left: 5rem;
 }
 
 @media screen and (min-width: 768px){
